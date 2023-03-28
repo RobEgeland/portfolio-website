@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html {
+ background-image: url('../public/halftone_background_12.jpg');
+}
 
 .App-header {
   background-color: #282c34;
