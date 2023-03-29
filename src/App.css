@@ -13,7 +13,9 @@
   }
 }
 html {
- background-image: url('../public/halftone_background_12.jpg');
+  background-image: url('../public/background_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-header {
@@ -48,10 +50,11 @@ html {
 ul.menu {
   display: inline-block;
   list-style-type: none;
+  text-decoration: none;
 }
 li.menu_list {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   position: relative;
   text-decoration: none
 }
@@ -60,7 +63,7 @@ a.side {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 75px;
   width: 100%;
   padding: 30px;
   position: absolute;
@@ -72,15 +75,16 @@ a.side {
   cursor: pointer;
 }
 li.menu_list .front {
-  background-color: #0B525B;
+  background-color: #042630;
   color: wheat;
   transform-origin: 0 0;
+  text-decoration: none;
 }
 a.side {
   background-color: #3E1F47;
   color: wheat;
   text-decoration: none;
-  transform-origin: 0 0 100px;
+  transform-origin: 0 0 75px;
   transform: rotateY(-90deg);
 }
 li.menu_list:hover a.side {
@@ -89,3 +93,13 @@ li.menu_list:hover a.side {
 li.menu_list:hover .front {
   transform: rotateY(90deg);
 }
+
+
+.name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  color: aquamarine;
+}
+
