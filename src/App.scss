@@ -12,12 +12,31 @@
         animation: App-logo-spin infinite 20s linear;
     }
 }
+
 html {
-    background-image: url('../public/background_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #b6c199;
+    background:
+    linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+    linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+    linear-gradient(-90deg, #aaa 1px, transparent 1px),
+    linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+    linear-gradient(#aaa 1px, transparent 1px),
+    #f2f2f2;
+background-size:
+    4px 4px,
+    4px 4px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px;
 }
-  
+
+
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -105,7 +124,8 @@ li.menu_list:hover .front {
     font-weight: 800;
     font-size: 4.5vw;
     text-transform: uppercase;
-    color: aquamarine;
+    color: #b68d40;
+    // D6AD61
 }
 
 .description {
@@ -129,9 +149,10 @@ $speed: 16s;
 $wordCount: 3;
 
 .morphing {
+    width: 120px;
     position: relative;
     font-size: 70px;
-    color: #fff;
+    color: #F4EBD0;
     filter: contrast(25) blur(1px);
 }
 
@@ -154,3 +175,4 @@ $wordCount: 3;
         20%, 80% { filter: blur(1em); opacity: 0; }        
     }
 }
+
