@@ -15,25 +15,8 @@
 
 html {
     background-color: #b6c199;
-    background:
-    linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
-    linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
-    linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
-    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
-    linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
-    linear-gradient(-90deg, #aaa 1px, transparent 1px),
-    linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
-    linear-gradient(#aaa 1px, transparent 1px),
-    #f2f2f2;
-background-size:
-    4px 4px,
-    4px 4px,
-    80px 80px,
-    80px 80px,
-    80px 80px,
-    80px 80px,
-    80px 80px,
-    80px 80px;
+  
+
 }
 
 
@@ -60,65 +43,93 @@ background-size:
         transform: rotate(360deg);
     }
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.menu {
+    float: right;
+    // overflow: hidden;
+    margin: 10px;
+    margin-right: 70px;
+    // margin-top: 10px;
+    // top: 0px;
+    // right: 0px;
+    // -webkit-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+  
+}
+
+.menu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 100px;
+    margin-right: 15px;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.menu a:hover {
+    color: #006466;
+}
+
+.menu .dot {
+    width: 6px;
+    height: 6px;
+    background: #006466;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.menu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(165px);
+    transform: translateX(165px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
 }
   
-ul.menu {
-    display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
-}
-li.menu_list {
-    height: 75px;
-    width: 75px;
-    position: relative;
-    text-decoration: none
-}
-li.menu_list .front,
-a.side {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
-    width: 100%;
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .5s ease-out;
-    cursor: pointer;
-}
-li.menu_list .front {
-    background-color: #042630;
-    color: wheat;
-    transform-origin: 0 0;
-    text-decoration: none;
-}
-a.side {
-    background-color: #3E1F47;
-    color: wheat;
-    text-decoration: none;
-    transform-origin: 0 0 75px;
-    transform: rotateY(-90deg);
-}
-li.menu_list:hover a.side {
-    transform: rotateY(0deg);
-}
-li.menu_list:hover .front {
-    transform: rotateY(90deg);
-}   
+  .menu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(280px);
+    transform: translateX(280px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .menu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(395px);
+    transform: translateX(395px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
 
 .home {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .name {
-    width: fit-content;
+    width: 50%;
+    height: 50%;
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
@@ -175,4 +186,6 @@ $wordCount: 3;
         20%, 80% { filter: blur(1em); opacity: 0; }        
     }
 }
+
+
 

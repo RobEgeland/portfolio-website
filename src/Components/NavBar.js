@@ -4,24 +4,13 @@ import { ImHome3, ImFolderOpen, ImAddressBook, ImItalic } from "react-icons/im";
 
 
 const NavBar = () => {
-    return (
+    return (  
         <div className='menu'>
-            <li className='menu_list'>
-                <span className="front fas fa-home"><ImHome3 /></span>
-                <a><NavLink className='side' to={'/'}>Home</NavLink></a>
-            </li>
-            <li className='menu_list'>
-                <span className="front fas fa-projects"><ImFolderOpen /></span>
-                <a><NavLink className='side' to={'/projects'}>Projects</NavLink></a>
-            </li>
-            <li className='menu_list'>
-                <span className="front fas fa-about"><ImItalic /></span>
-                <a><NavLink className='side' to={'/about-me'}>About</NavLink></a>
-            </li>
-            <li className='menu_list'>
-                <span className="front fas fa-contact"><ImAddressBook /></span>
-                <a><NavLink className='side' to={'/contact'}>Contact</NavLink></a>
-            </li>
+            <a><NavLink className='side' to={'/'}>Home</NavLink></a>
+            <a><NavLink className='side' to={'/projects'}>Projects</NavLink></a>
+            <a><NavLink className='side' to={'/about-me'}>About</NavLink></a>
+            <a><NavLink className='side' to={'/contact'}>Contact</NavLink></a>
+            <div className='dot'></div>
         </div>
     )
 }

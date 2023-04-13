@@ -10,6 +10,7 @@ const Home = () => {
           <div class="word">Developer</div>
           <div class="word">Musician</div>
           <div class="word">Pragmatist</div>
+          
         </div>
       </div>
     </div>
