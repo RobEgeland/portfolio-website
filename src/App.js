@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './Rob.png';
 import './App.scss';
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
@@ -12,6 +12,7 @@ function App() {
   const location = useLocation()
   return (
       <div className="App">
+        <div className='logo-parent'><img className='logo' src={logo}></img></div>
         <NavBar />
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>

@@ -1,16 +1,15 @@
 import React from 'react'
+import headshot from "../selfportrait.png"
 
 const Home = () => {
   return (
     <div className='home'>
-      <h1 className='name'>Rob Egeland</h1>
-      <div className='description'>
-        <span className='is-a'>I'm a</span>
-        <div class="morphing">
-          <div class="word">Developer</div>
-          <div class="word">Musician</div>
-          <div class="word">Pragmatist</div>
-          
+      <div className='home-content'>
+        <img className='headshot' src={headshot}></img>
+        <div className='text'>
+          <div className='heading-parent'>
+            <h1 className='heading'>Driven by an interest for Music and Cars, I seek to make the web interactive and fast.</h1>
+          </div>
         </div>
       </div>
     </div>

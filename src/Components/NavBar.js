@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ImHome3, ImFolderOpen, ImAddressBook, ImItalic } from "react-icons/im";
+import logo from '../Rob.png'
 
 
 const NavBar = () => {

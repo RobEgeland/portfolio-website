@@ -13,11 +13,15 @@
     }
 }
 
-html {
-    background-color: #b6c199;
-  
-
+body {
+    background: rgba(182, 193, 153, 1);
+    // background-size: 40px 40px;
+    // background-image:
+    // linear-gradient(to right, grey 1px, transparent 1px,),
+    // linear-gradient(to bottom, grey 1px, transparent 1px);
 }
+
+
 
 
 .App-header {
@@ -28,7 +32,7 @@ html {
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: grey;
 }
   
 .App-link {
@@ -44,8 +48,10 @@ html {
     }
 }
 
+
 .menu {
-    float: right;
+    width: 100%;
+    height: 60px;
     // overflow: hidden;
     margin: 10px;
     margin-right: 70px;
@@ -58,14 +64,15 @@ html {
 }
 
 .menu a {
+    // float: right;
     color: #f6f4e6;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-weight: 500;
     display: inline-block;
-    width: 100px;
-    margin-right: 15px;
+    width: fit-content;
+    margin-right: 25px;
     margin-top: 5px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -87,105 +94,84 @@ html {
 }
 
 .menu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+    -webkit-transform: translateX(690px);
+    transform: translateX(690px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 
 .menu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(165px);
-    transform: translateX(165px);
+    -webkit-transform: translateX(844px);
+    transform: translateX(844px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
   
   .menu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(280px);
-    transform: translateX(280px);
+    -webkit-transform: translateX(999px);
+    transform: translateX(999px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
   .menu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(395px);
-    transform: translateX(395px);
+    -webkit-transform: translateX(1158px);
+    transform: translateX(1158px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
 
-
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-.name {
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 4.5vw;
-    text-transform: uppercase;
-    color: #b68d40;
-    // D6AD61
-}
-
-.description {
-    margin: auto;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    width: fit-content;
-}
-.is-a {
-    font-size: 70px;
-}
-
-
-// *, *::before, *::after {
-//     padding: 0;
-//     margin: 0 auto;
-//     box-sizing: border-box;
-// }
-  
-$speed: 16s;
-$wordCount: 3;
-
-.morphing {
-    width: 120px;
-    position: relative;
-    font-size: 70px;
-    color: #F4EBD0;
-    filter: contrast(25) blur(1px);
-}
-
-.word {
-    width: 1000px; 
-    display: inline-block;
+  .logo-parent {
     position: absolute;
-    top: 50%; left: 150%;
-    transform: translate(-50%, -50%);
-    animation: word $speed infinite ease-in-out;
-  
-    @for $i from 0 to $wordCount {
-        &:nth-child(#{$i + 1}) {
-        animation-delay: ($speed / ($wordCount + 1) * $i) - $speed;
-        }
-    }
-  
-    @keyframes word {
-        0%, 5%, 100% { filter: blur(0px); opacity: 1; }        
-        20%, 80% { filter: blur(1em); opacity: 0; }        
-    }
+    top: -12%;
+    left: -7%;
 }
+
+  .logo {
+   width: 60%;
+  }
+
+  .home-content {
+    margin-top: 8%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .heading-parent {
+    height: fit-content;
+    margin: auto;
+    width: 770px;
+  }
+
+  .heading {
+    font-size: 40px;
+    color: white;
+  }
+
+  .headshot {
+    border-radius: 25%;
+    width: 20%;
+    height: auto;
+    background-size: 20px 20px;
+    background-image:
+    linear-gradient(to right, grey 1px, transparent 1px,),
+  }
+
+  .text {
+    margin-top: 10%;
+    margin-left: 4%;
+  }
+
+
+
+
+
+
+
 
 
 
