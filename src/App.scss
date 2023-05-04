@@ -170,11 +170,17 @@ body {
     margin: auto;
     width: fit-content;
   }
-
+  
+  .proj-desc {
+    color: #05060f;
+    font-size: 1rem;
+    line-height: 1.15;
+    font-weight: 700;
+  }
 
   .card {
     width: 190px;
-    height: 254px;
+    height: fit-content;
     background: #99C1B8;
     padding: 1rem;
     border-radius: 1rem;
